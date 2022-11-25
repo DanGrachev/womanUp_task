@@ -1,0 +1,128 @@
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.7);
+
+  .modal_content {
+    background: #21212B;
+    border: none;
+    border-radius: 20px;
+    margin: 15% auto;
+    padding: 30px 0;
+    width: 30%;
+
+
+    .modal_title {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      font-size: 30px;
+      color: #FC76A1;
+      margin-bottom: 30px;
+    }
+
+    .form {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+
+      .form__checkbox_block {
+        margin-bottom: 30px;
+        width: 70%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+
+        .form__checkbox {
+          width: 25px;
+          height: 25px;
+          margin-right: 15px;
+        }
+        .form__checkbox__label {
+          font-size: 22px;
+          font-weight: 700;
+          color: #fff;
+          span {
+            font-weight: 400;
+            color: #FC76A1;
+          }
+        }
+      }
+
+      .form__input {
+        border: none;
+        outline: none;
+        background: #21212B;
+        border-bottom: 1px solid #FC76A1;
+        color: #fff;
+        font-size: 20px;
+        width: 70%;
+        margin-bottom: 40px;
+      }
+
+      .date {
+        width: 30%;
+      }
+
+      .form__input_file {
+        display: none;
+      }
+      .form__input_file__label {
+        cursor: pointer;
+        color: #FC76A1;
+        font-size: 18px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 15px;
+        img {
+          width: 80px;
+        }
+      }
+      .form__attached_file {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #38384b;
+        border-bottom: 2px solid #FC76A1;
+        height: auto;
+        width: auto;
+        padding: 10px;
+        margin: 0 90px 0 90px;
+
+        img {
+          width: 30px;
+        }
+        span {
+          color: #fff;
+          font-size: 18px;
+          width: 85%;
+          margin-left: 20px;
+        }
+      }
+
+      .form__btn {
+        margin-top: 40px;
+        width: 150px;
+        height: 50px;
+        background: #21212B;
+        border: 1px solid #FC76A1;
+        border-radius: 30px;
+        color: #FC76A1;
+        font-size: 18px;
+        transition: 0.3s all;
+        cursor: pointer;
+      }
+      .form__btn:hover {
+        color: #fff;
+        background: #FC76A1;
+      }
+    }
+  }
+}

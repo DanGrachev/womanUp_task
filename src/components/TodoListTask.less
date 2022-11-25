@@ -1,0 +1,128 @@
+.task {
+  width: 700px;
+  height: auto;
+  display: flex;
+  align-items: baseline;
+  background: #21212B;
+  border-radius: 15px;
+  padding: 20px 30px;
+  margin-bottom: 40px;
+  font-size: 22px;
+
+  .task__checked {
+    margin-right: 20px;
+    input {
+      width: 20px;
+      height: 20px;
+    }
+  }
+
+  .task__deadline {
+    color: red;
+    font-size: 25px;
+    font-weight: bold;
+    margin-bottom: 10px;
+  }
+
+  .task__content {
+    margin-right: 25px;
+    .task__content__title {
+      font-size: 35px;
+      margin-bottom: 15px;
+      color: #FC76A1;
+      border-bottom: 1px solid #FC76A1;
+    }
+
+    .task__content__info {
+      display: flex;
+      align-items: baseline;
+      margin-bottom: 15px;
+
+      h3 {
+        font-size: 26px;
+      }
+
+      .task__content__text {
+        margin: 0 40px 0 12px;
+      }
+    }
+
+    .task__content__date {
+      color: #ff9a36;
+      font-weight: 700;
+      span {
+        margin-left: 12px;
+        font-weight: 400;
+      }
+    }
+
+    .task__content__file__block {
+      margin-top: 30px;
+
+      h4 {
+        color: #FC76A1;
+      }
+      .task__content__file {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        background: #38384b;
+        border-bottom: 2px solid #FC76A1;
+        height: auto;
+        width: 300px;
+        padding: 10px;
+        margin-top: 10px;
+
+        img {
+          width: 30px;
+        }
+        a {
+          text-decoration: none;
+          color: #fff;
+          font-size: 18px;
+          width: auto;
+          margin-left: 20px;
+          transition: 0.2s all;
+        }
+        a:hover {
+          color: #FC76A1;
+        }
+      }
+    }
+  }
+
+  .task__operations {
+    margin-left: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+
+    .btn__delete {
+      border: none;
+      background: none;
+      color: #a40000;
+      font-size: 18px;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: 0.3s all;
+
+    }
+    .btn__delete:hover {
+      color: #ff0000;
+    }
+
+    .btn__edit {
+      border: none;
+      background: none;
+      color: #1fa11b;
+      font-size: 18px;
+      padding: 5px 10px;
+      cursor: pointer;
+      transition: 0.3s all;
+    }
+    .btn__edit:hover {
+      color: #2eff29;
+    }
+  }
+}
+
